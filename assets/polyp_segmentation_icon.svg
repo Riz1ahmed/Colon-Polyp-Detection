@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" role="img" aria-labelledby="title description">
+  <title id="title">Polyp Segmentation</title>
+  <desc id="description">A mint colon outline with a highlighted polyp inside a medical scan frame.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#172733"/>
+      <stop offset="1" stop-color="#0B1119"/>
+    </linearGradient>
+    <linearGradient id="tube" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9AF2D4"/>
+      <stop offset="1" stop-color="#54CFA8"/>
+    </linearGradient>
+    <filter id="softGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="18" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1024" height="1024" rx="224" fill="url(#background)"/>
+  <rect x="48" y="48" width="928" height="928" rx="190" fill="none" stroke="#29394A" stroke-width="8"/>
+
+  <!-- Scan-frame corners -->
+  <g fill="none" stroke="#74E6BE" stroke-linecap="round" stroke-width="24" opacity=".72">
+    <path d="M236 334v-42q0-28 28-28h42M718 264h42q28 0 28 28v42M788 690v42q0 28-28 28h-42M306 760h-42q-28 0-28-28v-42"/>
+  </g>
+
+  <!-- Simplified colon pathway -->
+  <path d="M340 674V382c0-67 43-110 110-110h126c67 0 108 43 108 110v220c0 57-35 91-87 91h-29c-43 0-69-25-69-67v-35"
+        fill="none" stroke="#07130F" stroke-width="82" stroke-linecap="round" stroke-linejoin="round" opacity=".62" transform="translate(0 10)"/>
+  <path d="M340 674V382c0-67 43-110 110-110h126c67 0 108 43 108 110v220c0 57-35 91-87 91h-29c-43 0-69-25-69-67v-35"
+        fill="none" stroke="url(#tube)" stroke-width="66" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Haustral folds -->
+  <g fill="none" stroke="#D1FFF0" stroke-linecap="round" stroke-width="12" opacity=".55">
+    <path d="M321 368h38M321 443h38M321 520h38M321 596h38M419 250v40M500 250v40M581 250v40M666 344h38M666 424h38M666 505h38"/>
+  </g>
+
+  <!-- Segmented polyp highlight -->
+  <path d="M668 439c-23 0-29-26-52-26s-29 26-52 26" fill="none" stroke="#FF9B78" stroke-width="22" stroke-linecap="round"/>
+  <circle cx="616" cy="407" r="21" fill="#FF9B78" filter="url(#softGlow)"/>
+  <circle cx="616" cy="407" r="10" fill="#FFE3D8"/>
+
+  <!-- Small segmentation target -->
+  <circle cx="616" cy="407" r="51" fill="none" stroke="#FF9B78" stroke-width="6" stroke-dasharray="10 13" opacity=".82"/>
+</svg>
