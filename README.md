@@ -10,13 +10,17 @@ A Flutter research prototype for visualizing predicted polyp regions in colonosc
 
 The image panels are stacked vertically on a narrow screen.
 
-![Polyp Segmentation running on Android](assets/screenshot/polyp_detect_android.webp)
+<p align="center">
+  <img src="assets/screenshot/polyp_detect_android.webp" alt="Polyp Segmentation running on Android" width="320">
+</p>
 
 ### macOS
 
 On a wide screen, the original image and predicted overlay are shown side by side.
 
-![Polyp Segmentation running on macOS](assets/screenshot/polyp_detect_macOS.webp)
+<p align="center">
+  <img src="assets/screenshot/polyp_detect_macOS.webp" alt="Polyp Segmentation running on macOS" width="720">
+</p>
 
 ## Features
 
